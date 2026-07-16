@@ -38,6 +38,13 @@ const musicians = [
     }
 ]
 
+app.get("/", (req, res) => {
+    res.send("Welcome to My music API");
+    console.log('marvellous');
+    
+});
+
+
 app.get("/musicians", (req, res) => {
     res.send(musicians);
 });
